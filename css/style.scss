@@ -235,11 +235,20 @@ img {
   text-transform: uppercase;
   letter-spacing: .3em;
   font-family: $sans;
-  background-color: transparent;
   outline: none;
+  background-color: transparent;
   transition: 0.1s background-color linear, 0.1s color linear;
   &:hover {
     background: #000;
     color: $white;
+  }
+}
+
+.btn-inverse {
+  border: solid 2px $white;
+  color: $white;
+  &:hover {
+    background: $white;
+    color: #000;
   }
 }
