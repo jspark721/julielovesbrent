@@ -1,0 +1,426 @@
+@import url("https://fonts.googleapis.com/css?family=Cardo|Roboto:300,400");
+body, html {
+  background: #FCFCFC;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+/* navigation */
+.top-left {
+  display: inline-block;
+  float: left;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.branding {
+  font-family: "Cardo", serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: #707070;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+}
+.branding:hover {
+  color: #FCFCFC;
+  transition: all 0.2s ease;
+}
+
+.top-right {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+}
+
+.header-nav {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.header-nav-item {
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: #707070;
+  letter-spacing: 1px;
+}
+.header-nav-item:hover {
+  color: #EAB4B6;
+  transition: all 0.2s ease;
+}
+
+/* headings & fonts */
+h1 {
+  font-family: "Cardo", serif;
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+h4 {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 3em 0;
+  color: #EAB4B6;
+  font-size: 0.8em;
+}
+
+p {
+  font-family: "Cardo", serif;
+  color: #B2B2B2;
+  line-height: 1.5em;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* sections */
+.section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section2 {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.hero {
+  position: relative;
+  background: url("img/main.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.hero:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+  opacity: .3;
+}
+
+.hero-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #FCFCFC;
+  top: 15%;
+}
+.hero-title h1 {
+  font-size: 3.5em;
+  letter-spacing: 1px;
+}
+.hero-title h3 {
+  letter-spacing: 15px;
+  font-size: 1.3em;
+  margin-top: -30px;
+}
+
+.story {
+  position: relative;
+  width: 100%;
+  background: #FCFCFC;
+}
+.story h2 {
+  margin: 3em 0;
+}
+
+.story-left, .story-middle, .story-right {
+  position: absolute;
+  width: 33%;
+}
+
+.story-left {
+  left: 5%;
+}
+
+.story-middle {
+  left: 30%;
+}
+.story-middle h3 {
+  color: #EAB4B6;
+  font-size: 2.5em;
+  text-align: left;
+  letter-spacing: 0px;
+  font-weight: 100;
+  font-family: serif;
+  text-transform: capitalize;
+}
+
+.story-right {
+  right: 0;
+}
+
+.story-image {
+  width: 300px;
+}
+
+.crop {
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.proposal {
+  position: relative;
+  background: url("img/proposal.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.proposal:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+  opacity: .3;
+}
+
+.proposal-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  padding-right: 5%;
+  color: #FCFCFC;
+  top: 15%;
+}
+.proposal-title h1 {
+  overflow-wrap: break-word;
+}
+
+.wedding {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: #FCFCFC;
+  margin-bottom: 10%;
+}
+
+.wedding-title {
+  margin-top: 10%;
+}
+.wedding-title h2 {
+  margin-top: 2em;
+}
+
+.quote {
+  position: relative;
+  background: url("img/love.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.quote:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+  opacity: .3;
+}
+
+.quote-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: #FCFCFC;
+  top: 25%;
+}
+.quote-title h1 {
+  font-size: 4em;
+}
+
+.timer {
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
+  background: #FCFCFC;
+}
+.timer h1 {
+  font-size: 2.5em;
+  color: #B2B2B2;
+}
+
+.timer-title {
+  color: #B2B2B2;
+}
+
+.travel {
+  position: relative;
+  background: url("img/travel.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.travel:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+  opacity: .3;
+}
+
+.travel-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
+  color: #FCFCFC;
+  top: 15%;
+}
+
+.hashtag {
+  margin-top: 15%;
+  height: 300px;
+}
+.hashtag h1 {
+  color: #df8c8f;
+  font-size: 3em;
+  text-align: center;
+}
+.hashtag h4 {
+  text-align: center;
+  color: #df8c8f;
+}
+
+.rsvp {
+  position: relative;
+  background: url("img/rsvp.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.rsvp:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+  opacity: .3;
+}
+
+.rsvp-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
+  color: #FCFCFC;
+  top: 25%;
+}
+.rsvp-title h3 {
+  text-align: left;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+footer h4 {
+  margin-top: 5%;
+}
+footer h4 a {
+  color: #EAB4B6;
+}
+
+/* buttons */
+.btn {
+  border: solid 2px #000;
+  color: #000;
+  padding: 25px 46px;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-family: "Roboto", sans-serif;
+  outline: none;
+  background-color: transparent;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+.btn:hover {
+  background: #000;
+  color: #FCFCFC;
+}
+
+.btn-inverse {
+  border: solid 2px #FCFCFC;
+  color: #FCFCFC;
+}
+.btn-inverse:hover {
+  background: #FCFCFC;
+  color: #000;
+}
+
+/* countdown timer */
+#countdown {
+  padding: 30px;
+  text-align: center;
+}
+
+.countdown-wrap {
+  display: inline-block;
+  padding: 50px;
+}
+
+.countdown-days, .countdown-hours, .countdown-minutes, .countdown-seconds {
+  width: 150px;
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #B2B2B2;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.numbers {
+  font-size: 2.5em;
+  color: #EAB4B6;
+  font-family: "Cardo", serif;
+}

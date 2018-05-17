@@ -1,0 +1,444 @@
+$white: #FCFCFC;
+$light: #B2B2B2;
+$pink: #EAB4B6;
+$dark: #707070;
+
+@import url('https://fonts.googleapis.com/css?family=Cardo|Roboto:300,400');
+
+$serif: 'Cardo', serif;
+$sans: 'Roboto', sans-serif;
+
+
+body, html {
+  background: $white;
+  margin: 0;
+  box-sizing:border-box;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+header {
+  width: 100%;
+  height: 80px;
+}
+
+/* navigation */
+
+.top-left {
+  display: inline-block;
+  float: left;
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+.branding {
+  font-family: $serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: $dark;
+  font-weight: 300;
+  letter-spacing: -0.5px;
+  &:hover {
+    color: $white;
+    transition: all 0.2s ease;
+  }
+}
+
+.top-right {
+  display: inline-block;
+  float: right;
+  margin-top: 30px;
+}
+
+.header-nav {
+  text-align: right;
+  margin-right: 15px;
+}
+
+.header-nav-item {
+  padding: 10px;
+  text-decoration: none;
+  font-family: $sans;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-weight: 300;
+  color: $dark;
+  letter-spacing: 1px;
+  &:hover {
+    color: $pink;
+    transition: all 0.2s ease;
+  }
+}
+
+
+/* headings & fonts */
+
+h1 {
+  font-family: $serif;
+  font-weight: 300;
+}
+
+h2, h3 {
+  font-family: $sans;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h2 {
+  font-weight: 900;
+  font-size: 1.2em;
+  letter-spacing: 3px;
+}
+
+h3 {
+  font-weight: 100;
+  letter-spacing: 5px;
+}
+
+h4 {
+  font-family: $sans;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 3em 0;
+  color: $pink;
+  font-size: 0.8em;
+}
+
+p {
+  font-family: $serif;
+  color: $light;
+  line-height: 1.5em;
+}
+
+img {
+  object-fit: cover;
+}
+
+/* sections */
+
+.section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.section2 {
+  width: 100%;
+  min-height: 80vh;
+}
+
+.hero {
+  position: relative;
+  background: url("img/main.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+    opacity: .3;
+   }
+}
+
+.hero-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: $white;
+  top: 15%;
+  h1 {
+    font-size: 3.5em;
+    letter-spacing: 1px;
+  }
+  h3 {
+    letter-spacing: 15px;
+    font-size: 1.3em;
+    margin-top: -30px;
+  }
+}
+
+.story {
+  position: relative;
+  width: 100%;
+  background: $white;
+  h2 {
+    margin: 3em 0;
+  }
+}
+
+.story-left, .story-middle, .story-right {
+  position: absolute;
+  width: 33%;
+}
+
+.story-left {
+  left: 5%;
+}
+
+.story-middle {
+  left: 30%;
+  h3 {
+    color: $pink;
+    font-size: 2.5em;
+    text-align: left;
+    letter-spacing: 0px;
+    font-weight: 100;
+    font-family: serif;
+    text-transform: capitalize;
+  }
+}
+
+.story-right {
+  right: 0;
+}
+
+.story-image {
+  width: 300px;
+}
+
+.crop {
+  height: 250px;
+  margin-bottom: 15px;
+}
+
+.proposal {
+  position: relative;
+  background: url("img/proposal.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+    opacity: .3;
+   }
+}
+
+.proposal-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  padding-right: 5%;
+  color: $white;
+  top: 15%;
+  h1 {
+    overflow-wrap: break-word;
+  }
+}
+
+.wedding {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  background: $white;
+  margin-bottom: 10%;
+}
+
+.wedding-title {
+  margin-top: 10%;
+  h2 {
+    margin-top: 2em;
+  }
+}
+
+.quote {
+  position: relative;
+  background: url("img/love.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+    opacity: .3;
+   }
+}
+
+.quote-title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  color: $white;
+  top: 25%;
+  h1 {
+    font-size: 4em;
+  }
+}
+
+.timer {
+  position: relative;
+  margin-top: 15%;
+  text-align: center;
+  width: 100%;
+  background: $white;
+  h1 {
+    font-size: 2.5em;
+    color: $light;
+  }
+}
+
+.timer-title {
+  color: $light;
+}
+
+.travel {
+  position: relative;
+  background: url("img/travel.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+    opacity: .3;
+   }
+}
+
+.travel-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
+  color: $white;
+  top: 15%;
+}
+
+.hashtag {
+  margin-top: 15%;
+  height: 300px;
+  h1 {
+    color: darken($pink, 10%);
+    font-size: 3em;
+    text-align: center;
+  }
+  h4 {
+    text-align: center;
+    color: darken($pink, 10%);
+  }
+}
+
+.rsvp {
+  position: relative;
+  background: url("img/rsvp.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(to bottom right, #aaaaaa, #000000);
+    opacity: .3;
+   }
+}
+
+.rsvp-title {
+  position: absolute;
+  text-align: left;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 100%;
+  color: $white;
+  top: 25%;
+  h3 {
+    text-align: left;
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  h4 {
+    margin-top: 5%;
+    a {
+      color: $pink;
+      &:hover {
+        color: $dark;
+      }
+    }
+  }
+}
+
+/* buttons */
+
+.btn {
+  border: solid 2px #000;
+  color: #000;
+  padding: 25px 46px;
+  font-size: 11px;
+  font-weight: 500;
+  font-style: normal;
+  text-transform: uppercase;
+  letter-spacing: .3em;
+  font-family: $sans;
+  outline: none;
+  background-color: transparent;
+  transition: 0.1s background-color linear, 0.1s color linear;
+  &:hover {
+    background: #000;
+    color: $white;
+  }
+}
+
+.btn-inverse {
+  border: solid 2px $white;
+  color: $white;
+  &:hover {
+    background: $white;
+    color: #000;
+  }
+}
+
+/* countdown timer */
+#countdown {
+  padding: 30px;
+  text-align: center;
+}
+
+.countdown-wrap {
+  display: inline-block;
+  padding: 50px;
+}
+
+.countdown-days, .countdown-hours, .countdown-minutes, .countdown-seconds {
+  width: 150px;
+  display: inline-block;
+  font-family: $sans;
+  text-transform: uppercase;
+  color: $light;
+  letter-spacing: 3px;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.numbers {
+  font-size: 2.5em;
+  color: $pink;
+  font-family: $serif;
+}
